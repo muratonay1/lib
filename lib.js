@@ -65,7 +65,7 @@ Object.prototype.jparse =
     };
 
 Object.prototype.formatDate =
-    Object.prototype.jstring ||
+    Object.prototype.formatDate ||
     function(format = String, split = String) {
         if (format == "ddMMyyyy") {
             var datePart = this.split('/');
