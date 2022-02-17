@@ -278,10 +278,6 @@ Object.prototype.findListMinLength = Object.prototype.findListMinLength || funct
 String.prototype.equalsList = String.prototype.equalsList || function(eliteList) {
 	var min = 0;
 	var flag = false;
-	/**
-	 *
-	 * @param {} params True ya da false değeri alır
-	 */
 	function isBalanced(params = Boolean) {
 		return params;
 	}
@@ -361,35 +357,3 @@ Object.prototype.mergeWith =
 			}
 		}
 	};
-
-var bag = {};
-var extendBag = {
-	var1:{
-		var1:"var1",
-		var2:"var2",
-		var3:"var3"
-	},
-	history:{
-		data:{
-			updatedDate:"01/01/1996",
-			lastLogin:true
-		},
-		historyType:"ModeHist-1"
-	}
-};
-var extendBag2 ={
-	history1:"test",
-	context:{
-		var1:"var1"
-	}
-}
-
-bag.jpush("data",extendBag);
-//console.log(extendBag.jget("context.var1.data"))
-//extendBag2.mergeWith(extendBag)
-var p = "MuratOnay38-.1?a";
-var sp = p.encrypt()
-var esp = sp.decrypt();
-console.log(p)
-console.log(sp)
-console.log(esp)
